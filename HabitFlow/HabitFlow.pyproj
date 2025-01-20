@@ -30,6 +30,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="main\admin.py" />
+    <Compile Include="main\apps.py" />
+    <Compile Include="main\migrations\__init__.py" />
+    <Compile Include="main\models.py" />
+    <Compile Include="main\tests.py" />
+    <Compile Include="main\views.py" />
+    <Compile Include="main\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="HabitFlow\__init__.py" />
     <Compile Include="HabitFlow\settings.py" />
@@ -37,10 +44,25 @@
     <Compile Include="HabitFlow\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="main\static\img\clock1.svg" />
+    <Content Include="main\static\img\daily.svg" />
+    <Content Include="main\static\img\lamp.svg" />
+    <Content Include="main\static\img\mind.svg" />
+    <Content Include="main\static\img\time.svg" />
+    <Content Include="main\static\img\winer.svg" />
+    <Content Include="main\static\index.css" />
+    <Content Include="main\static\script.js" />
+    <Content Include="main\templates\main\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HabitFlow\" />
+    <Folder Include="main\" />
+    <Folder Include="main\migrations\" />
+    <Folder Include="main\static\" />
+    <Folder Include="main\static\img\" />
+    <Folder Include="main\templates\" />
+    <Folder Include="main\templates\main\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
