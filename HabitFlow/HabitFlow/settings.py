@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     'main',
+    'habits', 
 ]
 
 # Middleware framework
@@ -78,10 +80,15 @@ WSGI_APPLICATION = 'HabitFlow.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'habit_bd',  # Имя базы
+        'USER': 'habit_user',  # Имя пользователя
+        'PASSWORD': 'habitflow',  # Пароль
+        'HOST': 'localhost',  # Сервер базы (локальный)
+        'PORT': '5432',  # Порт PostgreSQL
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -112,3 +119,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 STATIC_URL = '/static/'
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

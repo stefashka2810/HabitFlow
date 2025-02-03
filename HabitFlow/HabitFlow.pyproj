@@ -30,11 +30,25 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="habits\admin.py" />
+    <Compile Include="habits\apps.py" />
+    <Compile Include="habits\migrations\0001_initial.py" />
+    <Compile Include="habits\migrations\__init__.py" />
+    <Compile Include="habits\models.py" />
+    <Compile Include="habits\tests.py" />
+    <Compile Include="habits\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="habits\views.py" />
+    <Compile Include="habits\__init__.py" />
     <Compile Include="main\admin.py" />
     <Compile Include="main\apps.py" />
     <Compile Include="main\migrations\__init__.py" />
     <Compile Include="main\models.py" />
     <Compile Include="main\tests.py" />
+    <Compile Include="main\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="main\views.py" />
     <Compile Include="main\__init__.py" />
     <Compile Include="manage.py" />
@@ -44,6 +58,7 @@
     <Compile Include="HabitFlow\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="habits\templates\habits\index.html" />
     <Content Include="main\static\img\clock1.svg" />
     <Content Include="main\static\img\daily.svg" />
     <Content Include="main\static\img\lamp.svg" />
@@ -57,6 +72,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HabitFlow\" />
+    <Folder Include="habits\" />
+    <Folder Include="habits\migrations\" />
+    <Folder Include="habits\templates\" />
+    <Folder Include="habits\templates\habits\" />
     <Folder Include="main\" />
     <Folder Include="main\migrations\" />
     <Folder Include="main\static\" />
