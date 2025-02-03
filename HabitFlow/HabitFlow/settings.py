@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     
     'main',
     'habits', 
+    'rest_framework',
+    'rest_framework_simplejwt',
+    'users',
 ]
 
 # Middleware framework
@@ -121,3 +124,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = 'users.CustomUser'
+
