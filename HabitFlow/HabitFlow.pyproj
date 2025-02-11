@@ -32,7 +32,8 @@
   <ItemGroup>
     <Compile Include="habits\admin.py" />
     <Compile Include="habits\apps.py" />
-    <Compile Include="habits\migrations\0001_habit.py" />
+    <Compile Include="habits\migrations\0001_initial.py" />
+    <Compile Include="habits\migrations\0002_initial.py" />
     <Compile Include="habits\migrations\__init__.py" />
     <Compile Include="habits\models.py" />
     <Compile Include="habits\tests.py" />
@@ -60,6 +61,9 @@
     <Compile Include="users\apps.py" />
     <Compile Include="users\migrations\__init__.py" />
     <Compile Include="users\models.py" />
+    <Compile Include="users\serializers.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="users\tests.py" />
     <Compile Include="users\views.py" />
     <Compile Include="users\__init__.py" />
@@ -68,13 +72,19 @@
     <Content Include="habits\templates\habits\index.html" />
     <Content Include="main\static\img\clock1.svg" />
     <Content Include="main\static\img\daily.svg" />
-    <Content Include="main\static\img\lamp.svg" />
     <Content Include="main\static\img\mind.svg" />
-    <Content Include="main\static\img\time.svg" />
     <Content Include="main\static\img\winer.svg" />
     <Content Include="main\static\index.css" />
     <Content Include="main\static\script.js" />
-    <Content Include="main\templates\main\index.html" />
+    <Content Include="main\static\styles_about.css" />
+    <Content Include="main\static\styles_main_after_registration.css" />
+    <Content Include="main\static\styles_main_before_registration.css" />
+    <Content Include="main\templates\main\about.html" />
+    <Content Include="main\templates\main\main_after_registration.html" />
+    <Content Include="main\templates\main\main_before_registration.html" />
+    <Content Include="main\templates\main\registration.html" />
+    <Content Include="main\static\script_registration.js" />
+    <Content Include="main\static\styles_registration.css" />
     <Content Include="requirements.txt" />
     <Content Include="users\templates\users\index.html" />
   </ItemGroup>

@@ -1,3 +1,14 @@
-from django.shortcuts import render
+from rest_framework_simplejwt.views import TokenObtainPairView
+from rest_framework import generics
+from .serializers import UserRegistrationSerializer
+from django.contrib.auth import get_user_model
 
-# Create your views here.
+User = get_user_model()
+
+class RegisterView(generics.CreateAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserRegistrationSerializer
+
+class LoginView(TokenObtainPairView):
+    """Логин через email и пароль (JWT)"""
+    pass

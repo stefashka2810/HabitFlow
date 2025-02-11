@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{% static 'styles_about.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <nav>
+                <ul class="left-nav">
+                    <li class="profile"><a href="#">Profile</a></li>
+                    <li><a href="#">Habitat</a></li>
+                    <li><a href="#">Diagrams</a></li>
+                </ul>
+                <span class="logo">HabitFlow</span>
+                <ul class="right-nav">
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="about_container">
+        <div class="flower_left">
+            <img src="{% static 'img/flowers_2.svg' %}" alt="">
+        </div>
+        <h1>Nice to meet you!</h1>
+        <h2>Our names are Sophia and Stefania!</h2>
+        <h3>We are students and we want to help you track your habits </h3>
+        <h4>That is why we created this website</h4>
+        <p>&copy; 2025 HabitFlow. All rights reserved.</p>
+        <div class="flower_right">
+            <img src="{% static 'img/flowers_2.svg' %}" alt="">
+        </div>
+        <div class="sofia">
+            <img src="{% static 'img/sofia.svg' %}" alt="">
+        </div>
+    </div>
+
+</body>
+</html>

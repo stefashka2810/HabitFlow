@@ -41,3 +41,6 @@ class Habit(models.Model):
 
     class Meta:
         unique_together = ('user', 'name')  # Один пользователь не может создать одинаковые привычки дважды
+        
+
+
